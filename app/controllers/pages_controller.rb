@@ -29,8 +29,8 @@ class PagesController < ApplicationController
 		secret_word = "don-restarone"
 		if params[:magic_word] != secret_word
 			#redirect_to '/secrets'
-		 
-			redirect_to '/contest'
+		 	flash[:alert] = "sorry, you are not authorized to see that page!"
+			redirect_to '/welcome'
 		end 
 	end 
 
