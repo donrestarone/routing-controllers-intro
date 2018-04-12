@@ -25,6 +25,15 @@ class PagesController < ApplicationController
 		set_kitten_url
 	end 
 
+	def secrets
+		secret_word = "don-restarone"
+		if params[:magic_word] != secret_word
+			#redirect_to '/secrets'
+		 
+			redirect_to '/contest'
+		end 
+	end 
+
 
 
 end

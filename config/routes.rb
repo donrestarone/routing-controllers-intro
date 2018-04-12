@@ -6,4 +6,6 @@ get '/' => 'pages#welcome'
 get '/contest' => 'pages#contest'
 
 get '/kitten/:size' => 'pages#kitten'
+
+get '/secrets/:magic_word' => 'pages#secrets'
 end
